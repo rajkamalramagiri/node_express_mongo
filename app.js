@@ -5,6 +5,8 @@ const db = require("./database/db");
 
 const router = require("./routes/route");
 
+app.use(express.json());
+
 app.use("/", router);
 
 app.listen(9000, () => console.log("server listening to 9000..."));
